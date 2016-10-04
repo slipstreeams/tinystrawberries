@@ -8,7 +8,7 @@
 		<!--Fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet" type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600" rel="stylesheet" type='text/css'>
-		<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i" rel="stylesheet" type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600" rel="stylesheet" type='text/css'>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
@@ -23,52 +23,63 @@
 					<a href="#" class="btn btn-default btn-sm hamburger">
 		    		<span class="glyphicon glyphicon-menu-hamburger" alt="Show Menu"</span>
 		    		</a>
-					<h1 class="logo">tyro<span>Coffee</span></h1>
+					<h1 class="logo">
+						<a href = "index.html" role= navigation>tyro<span>Coffee</span></a></h1>
 					
 					<nav class="navigation mobile-hidden" role="navigation">
 						<ul class="top-nav horizontal-nav">
-							<li><a href="#">Regions</a></li>
+								
 							<li><a href="#">Community</a></li>
 							<li><a href="#">Basics</a></li>
 							<li><a href="#">Blog</a></li>
 							<li><a href="#">About</a></li>
+							<!-- dropdown regional nav -->
+							<li role="navigation" class="dropdown">
+							<a id="d-region-nav" data-target="#" href="#" class ="dropdown toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Regions <span class="caret"></span></a>
+								<ul class="dropdown-menu dropdown-menu-regions" aria-labelledby="dLabel">
+									<li><a href="central-america.html">Central America</a></li>
+									<li><a href="south-america.html">South America</a></li>
+									<li><a href="africa.html">Africa</a></li>
+									<li><a href="indonesia.html">Indonesia</a></li>
+								</ul>
+							</li>
 						</ul>
 					</nav>
 				</header>
 			</div>	
 		</div><!--closing tyroHeader container -->
-		
+		<div class="pale-cafe-bckgrd">
 		<div class="container">
-			<div class="image-holder">
+			
 			<section class="region-home">
 				
 				<h2>Initiation into the World of Coffee</h2>
-					<p>Welcome one and all, neophyte and coffee aficionado alike. While coffee has never been easier to lay hands on, today’s quick and cheap coffee fixes obscure the fascinating journey each coffee bean makes to land in your cup.</p>
-					<h3>Select a Major Coffee Region and Ramble Forth</h3>
+					<p>Welcome one and all, neophyte and coffee geek alike. While coffee has never been easier to lay hands on, today’s quick and cheap coffee fixes obscure the fascinating journey each coffee bean makes before landing in your cup.</p>
+					<h3>Select a Major Coffee Region to Explore</h3>
 
 				<row class="coffee-regions">
-					<div class= "col-lg-3 col-md-6 col-sm-12">
+					<div class= "col-lg-3 col-md-6 col-sm-12 text-center">
 						<div class="thumbnail">
-      						<img src="images/mexican-mtn.jpeg" class="img-responsive" alt="Mexican landscape">
-       						<a  class="btn btn-default button-region" href="#" role="button">Central America</a>
+      						<img src="images/mexican-mtn.jpg" class="img-responsive" alt="Mexican landscape">
+       						<a  class="btn btn-default btn-lg button-region" href="#" role="button">Central America</a>
        					</div>
      				</div>
-     				<div class= "col-lg-3 col-md-6 col-sm-12">
+     				<div class= "col-lg-3 col-md-6 col-sm-12 text-center">
 						<div class="thumbnail">
       						<img src="images/colombia-hillside-crop.jpg" class="img-responsive" alt="Colombian hillside">
-       						<a  class="btn btn-default button-region" href="#" role="button">South America</a>
+       						<a  class="btn btn-default  btn-lg button-region" href="#" role="button">South America</a>
        					</div>
      				</div>
-     				<div class= "col-lg-3 col-md-6 col-sm-12">
+     				<div class= "col-lg-3 col-md-6 col-sm-12 text-center">
 						<div class="thumbnail">
       						<img src="images/kenya-crop.jpg" class="img-responsive" alt="Kenyan landscape">
-       						<a  class="btn btn-default button-region" href="#" role="button">Africa</a>
+       						<a  class="btn btn-default  btn-lg button-region" href="#" role="button">Africa</a>
        					</div>
      				</div>
-     				<div class= "col-lg-3 col-md-6 col-sm-12">
+     				<div class= "col-lg-3 col-md-6 col-sm-12 text-center">
 						<div class="thumbnail">
       						<img src="images/indonesia-coffee-crop.jpg" class="img-responsive" alt="Indonesian coffee farm">
-       						<a  class="btn btn-default button-region" href="#" role="button">Indonesia</a>
+       						<a  class="btn btn-default btn-lg button-region" href="#" role="button">Indonesia</a>
        					</div>
      				</div>
    
@@ -76,18 +87,16 @@
 				<h3>
 
 			</section>
-		</div>
-		</div><!--closing regionHome container -->
+	
+		</div><!--closing region-home container -->
+	</div>
 		
-		<div class="container">
-			<div class ="row"
-			<footer class="tyro-footer">
-				<h4 class="logo">tyroCoffee</h4>
+		<div class="container.fluid">
+			<div class ="row">
+			<footer class="tyro-footer clearfix">
+				<h4 class="logo">tyro<span>Coffee</span></h4>
 
-				<ul class = "social-footer">
-					<li><a href="#"><img src="images/twitter.png" alt="Twitter logo"></a></li>
-					<li><a href="#"><img src="images/facebook.png" alt="Facebook logo"></a></li>
-					<li><a href="#"><img src="images/facebook.png" alt="Instgram logo"></a></li>
+				
 				</ul>
 			</footer>
 			</div>

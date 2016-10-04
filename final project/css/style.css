@@ -19,6 +19,7 @@ body{
 	font-family: font-family: 'Josefin Sans', 'Helvetica', sans-serif;
 }
 
+/* Core CSS */
 .tyroHeader{ 
 	font-family:'Cinzel', serif;
 	text-decoration:none;
@@ -30,6 +31,7 @@ body{
 }
 
 .logo {
+	
 	font-size: 41px;
 	float:left;
 	margin-left: 20px;
@@ -38,6 +40,9 @@ body{
 .logo span {
 	font-weight: 700;
 
+}
+.logo a {
+	color: black;
 }
 .navigation {
     padding: 30px 0 10px;
@@ -69,39 +74,59 @@ body{
     margin-right: 15px;
 }
 .horizontal-nav li:first-child {
+	
     
 }
 .horizontal-nav li:last-child {
-    margin-right: 0;
+    margin-right: 10px;
     border-right: none;
 }
+
+.dropdown-menu-regions li{
+	display: block
+}
+
 .hamburger {
     max-width: 36px;
     display: none;
     overflow: hidden;
 }
 
-.hamburger > img {
-    max-width: 100%;
-}
-.image-holder {
-	background: url("../images/coffee-pale.jpg") top center;	
-}
+/*.pale-cafe-bckgrd{
+ 	background: url(images/coffee-pale.jpg) no-repeat center center fixed;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+
+}*/
+
 .region-home {
-	margin-top: 50px;
+	margin: 50px 0;
 	background: white;
-	
 }
 
-.region-home h2 {
+.region-home h2, .region-home h3 {
 	font-family:'Crimson Text', 'Times New Roman', serif;
 	text-align: center;
+
+}
+.region-home h2 {
+	font-size: 40px;
 }
 
-.region-home p {
-	max-width: 740px;
-	margin: 0 auto;
+.region-home h3 {
+	font-size: 30px;
+	margin-bottom: 40px;
 }
+.region-home p {
+	max-width: 750px;
+	margin: 0 auto;
+	padding: 30px 20px;
+	font-size: 16px;
+}
+
+
 .img {
 	position: relative;
 	float: left;
@@ -111,11 +136,87 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.tyro-footer {
+	background: black;
+	color: white;
+	padding: 20px;
 
 
-@media only screen and (max-width: 900px){
-   
+}
+.tyro-footer .logo {
+	font-family:'Cinzel', serif;
+	font-size: 35px;
+
+}
+.thumbnail {
+	background-color: rgb(237, 237, 234);
+	padding: 10px;
+
+
+}
+.button-region {
+	text-align: center;
+	font-family:'Crimson Text', 'Times New Roman', serif;
+	font-weight: 400;
+	font-size: 28px;
+	margin:10px;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+
+}
+
+/* Regional Page CSS */
+
+
+/* Media Queries*/
+
+@media only screen and (max-width: 480px){
+	.logo {
+	font-size: 28px;
+   }
+} 
+@media only screen and (max-width: 600px){
+   	.logo {
+	font-size: 31px;
+   }
+    .mobileHidden{
+        display:none;
+    }
+      .hamburger {
+     	font-size: 20px;
+        max-width: 60px;
+        padding-top: 9px;
+        display: block;
+        text-align: center;
+        float: right;
+        overflow: hidden;
+        background-color:rgb(70,102,117); 
+        color: white;
+        border:2px;
 	} 
+ }
+
+@media only screen and (max-width: 936px){
+  
+    .horizontal-nav li{
+        display: block;
+        text-align: right;
+        border-right:none;
+        padding-right: 5px;
+        margin-right: 15px;
+        
+    }
+    .horizontal-nav a {
+	 margin-left: 0;
+	 margin-right: 0;
+	 padding-right: 0;   
+}
+
+.horizontal-nav li:last-child {
+    margin-right: 0px;
+    border-right: 0;
+}
 
 @media only screen and (min-width: 1092px){
 	.navigation {
