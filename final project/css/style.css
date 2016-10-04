@@ -1,0 +1,128 @@
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+body{
+	font-family: font-family: 'Josefin Sans', 'Helvetica', sans-serif;
+}
+
+.tyroHeader{ 
+	font-family:'Cinzel', serif;
+	text-decoration:none;
+	padding: 20px;
+	background-color: white;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+}
+
+.logo {
+	font-size: 41px;
+	float:left;
+	margin-left: 20px;
+}
+
+.logo span {
+	font-weight: 700;
+
+}
+.navigation {
+    padding: 30px 0 10px;
+    
+}
+
+.top-nav {
+	font-size: 20px;
+	overflow:hidden;
+
+
+}
+.horizontal-nav {
+    padding: ;
+    list-style: none;
+    text-align: right;
+}
+
+
+.horizontal-nav li {
+    display: inline-block;
+    border-right: solid 1px black;
+ 
+}
+
+.horizontal-nav a {
+	color: black;
+	 margin-left: 15px;
+    margin-right: 15px;
+}
+.horizontal-nav li:first-child {
+    
+}
+.horizontal-nav li:last-child {
+    margin-right: 0;
+    border-right: none;
+}
+.hamburger {
+    max-width: 36px;
+    display: none;
+    overflow: hidden;
+}
+
+.hamburger > img {
+    max-width: 100%;
+}
+.image-holder {
+	background: url("../images/coffee-pale.jpg") top center;	
+}
+.region-home {
+	margin-top: 50px;
+	background: white;
+	
+}
+
+.region-home h2 {
+	font-family:'Crimson Text', 'Times New Roman', serif;
+	text-align: center;
+}
+
+.region-home p {
+	max-width: 740px;
+	margin: 0 auto;
+}
+.img {
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 100px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+@media only screen and (max-width: 900px){
+   
+	} 
+
+@media only screen and (min-width: 1092px){
+	.navigation {
+    padding: 25px 0 10px;
+	}
+
+   .top-nav {
+	font-size: 25px;
+	}
+} 
