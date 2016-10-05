@@ -92,14 +92,7 @@ body{
     overflow: hidden;
 }
 
-/*.pale-cafe-bckgrd{
- 	background: url(images/coffee-pale.jpg) no-repeat center center fixed;
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
 
-}*/
 
 .region-home {
 	margin: 50px 0;
@@ -167,7 +160,72 @@ body{
 }
 
 /* Regional Page CSS */
+.guatemala-bckgrd{
+	background: url("../images/guatemala-mtn.jpeg") no-repeat center center fixed;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+}
+.brazil-bckgrd{
+	background: url("../images/brazil-landscape.jpeg") no-repeat center center fixed;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+}
+.region-ca{
+	font-family:'Crimson Text', 'Times New Roman', serif;
+	text-align: center;
+	color: rgb(239, 131, 78);	
+}
+.regional-coffee-overview{
+	font-size: 16px;
+	padding:10px;
+	
+}
 
+.dark-contrast {
+	background-color: rgba(5,4,2,.8);
+	margin: 0 auto;
+	overflow: none;
+	padding: 20px;
+}
+.light-contrast {;
+	background-color: rgba(230,230,230,.8);
+	margin: 0 auto;
+	overflow: none;
+	padding: 20px;
+	max-width: 760px;
+}
+.coffee-specs {
+	margin-top: 100px;
+	background-color: rgba(230,230,230,.8);
+	max-width: 540px;
+	padding: 30px;
+}
+.champagne-box {
+	max-width: 150px; 
+	max-height: 150px;
+	background-color: rgb(252, 248, 200); 
+	text-align: center;
+	margin: 10px 0px 20px 50px;
+	padding: 15px 0 10px 0;
+	
+} 
+.caramel-box {
+	max-width: 150px; 
+	max-height: 150px;
+	background-color: rgb(222, 120, 9);
+	text-align: center;
+	margin: 15px 0px 20px 50px;
+	padding: 15px 0 10px 0;
+	
+}
+
+.hide {
+  display: none;
+}
 
 /* Media Queries*/
 
