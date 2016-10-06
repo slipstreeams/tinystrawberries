@@ -1,12 +1,7 @@
 /* Box Model Hack */
-* {
-  -moz-box-sizing: border-box; /* Firexfox */
-  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-  box-sizing: border-box; /* IE */
-}
 
 /* Clear fix hack */
-.clearfix:after {
+.clearfix:after{
   content: ".";
   display: block;
   clear: both;
@@ -16,7 +11,7 @@
 }
 
 body{
-	font-family: font-family: 'Josefin Sans', 'Helvetica', sans-serif;
+	font-family: 'Helvetica', Arial, sans-serif;
 }
 
 /* Core CSS */
@@ -30,54 +25,50 @@ body{
 	box-shadow: 0 10px 6px -6px #777;
 }
 
-.logo {
+.logo{
 	
 	font-size: 41px;
 	float:left;
 	margin-left: 20px;
 }
 
-.logo span {
+.logo span{
 	font-weight: 700;
 
 }
-.logo a {
+.logo a{
 	color: black;
 }
-.navigation {
+.navigation{
     padding: 30px 0 10px;
     
 }
 
-.top-nav {
+.top-nav{
 	font-size: 20px;
 	overflow:hidden;
 
 
 }
-.horizontal-nav {
-    padding: ;
+.horizontal-nav{
     list-style: none;
     text-align: right;
 }
 
 
-.horizontal-nav li {
+.horizontal-nav li{
     display: inline-block;
     border-right: solid 1px black;
  
 }
 
-.horizontal-nav a {
+.horizontal-nav a{
 	color: black;
 	 margin-left: 15px;
     margin-right: 15px;
 }
-.horizontal-nav li:first-child {
-	
-    
-}
-.horizontal-nav li:last-child {
+
+.horizontal-nav li:last-child{
     margin-right: 10px;
     border-right: none;
 }
@@ -86,41 +77,40 @@ body{
 	display: block
 }
 
-.hamburger {
+.hamburger{
     max-width: 36px;
     display: none;
     overflow: hidden;
 }
 
 
-
-.region-home {
+.region-home{
 	margin: 50px 0;
 	background: white;
 }
 
-.region-home h2, .region-home h3 {
+.region-home h2, .region-home h3{
 	font-family:'Crimson Text', 'Times New Roman', serif;
 	text-align: center;
 
 }
-.region-home h2 {
+.region-home h2{
 	font-size: 40px;
 }
 
-.region-home h3 {
+.region-home h3{
 	font-size: 30px;
 	margin-bottom: 40px;
 }
-.region-home p {
+.region-home p{
 	max-width: 750px;
 	margin: 0 auto;
 	padding: 30px 20px;
 	font-size: 16px;
 }
 
-
-.img {
+/* landing regional thumbnail styling*/
+.img{
 	position: relative;
 	float: left;
 	width: 100px;
@@ -129,25 +119,12 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.tyro-footer {
-	background: black;
-	color: white;
-	padding: 20px;
 
-
-}
-.tyro-footer .logo {
-	font-family:'Cinzel', serif;
-	font-size: 35px;
-
-}
-.thumbnail {
+.thumbnail{
 	background-color: rgb(237, 237, 234);
 	padding: 10px;
-
-
 }
-.button-region {
+.button-region{
 	text-align: center;
 	font-family:'Crimson Text', 'Times New Roman', serif;
 	font-weight: 400;
@@ -159,150 +136,205 @@ body{
 
 }
 
+.tyro-footer{
+	background: black;
+	color: white;
+	padding: 20px;
+
+}
+.tyro-footer .logo{
+	font-family:'Cinzel', serif;
+	font-size: 35px;
+}
+
 /* Regional Pages CSS */
-.guatemala-bckgrd{
-	background: url("../images/guatemala-mtn.jpeg") no-repeat center center fixed;
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
-}
-.brazil-bckgrd{
-	background: url("../images/brazil-landscape.jpeg") no-repeat center center fixed;
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
-}
-.tanzania-bckgrd{
-	background: url("../images/tanzania-altitude.jpeg") no-repeat center center fixed;
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
-}
-.indonesia-bckgrd{
-	background: url("../images/indonesia-mtns.jpeg") no-repeat center center fixed;
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
-}
-.region-ca{
-	font-family:'Crimson Text', 'Times New Roman', serif;
-	text-align: center;
-	color: rgb(239, 131, 78);	
-}
-.regional-coffee-overview{
-	font-size: 16px;
-	padding:10px;
-	
-}
+	.guatemala-bckgrd{
+		background: url("../images/guatemala-mtn.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+	}
+	.brazil-bckgrd{
+		background: url("../images/brazil-landscape.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+	}
+	.tanzania-bckgrd{
+		background: url("../images/tanzania-altitude.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+	}
+	.indonesia-bckgrd{
+		background: url("../images/indonesia-mtns.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+	}
+	.region-ca{
+		font-family:'Crimson Text', 'Times New Roman', serif;
+		text-align: center;
+		color: rgb(239, 131, 78);	
+	}
+	.regional-coffee-overview{
+		font-size: 16px;
+		padding:10px;
+		
+	}
 
-.dark-contrast {
-	background-color: rgba(5,4,2,.8);
-	margin: 0 auto;
-	overflow: none;
-	padding: 20px;
-}
-.light-contrast {
-	background-color: rgba(230,230,230,.8);
-	margin: 0 auto;
-	overflow: none;
-	padding: 20px;
-	max-width: 760px;
-}
+	.dark-contrast{
+		background-color: rgba(5,4,2,.8);
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 20px;
+		color: rgb(227, 217, 204);
 
-.light-contrast-narrow {
-	background-color: rgba(230,230,230,.8);
-	margin: 0 auto;
-	overflow: none;
-	padding: 20px;
-	max-width: 340px;
+	}
+	.light-contrast{
+		background-color: rgba(230,230,230,.8);
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 20px;
+	}
+	.light-trnsprt-contrast{
+		background-color: rgba(230,230,230,.6);
+		color: black;
+		padding: 20px;
+	}
 
-}
-.coffee-specs {
-	margin-top: 100px;
-	background-color: rgba(230,230,230,.8);
-	max-width: 560px;
-	padding: 30px;
+	.col-centered {
+		float: none;
+		margin: 0 auto;
+	}
 
-}
-.coffee-descriptor-tags {
-	font-size: 22px;
-	text-decoration: none;
 
-}
-.champagne-box {
-	max-width: 150px; 
-	max-height: 150px;
-	background-color: rgb(252, 248, 200); 
-	text-align: center;
-	margin: 10px 0px 20px 50px;
-	padding: 15px 0 10px 0;
-	
-} 
-.caramel-box {
-	max-width: 150px; 
-	max-height: 150px;
-	background-color: rgb(222, 120, 9);
-	text-align: center;
-	margin: 15px 0px 20px 50px;
-	padding: 15px 0 10px 0;
-	
-}
-.violet-box {
-	max-width: 150px; 
-	max-height: 150px;
-	background-color: rgb(146, 67, 227);
-	text-align: center;
-	margin: 15px 0px 20px 50px;
-	padding: 35px 0 20px 0;
-	
-}
-.persimmon-box {
-	max-width: 150px; 
-	max-height: 150px;
-	background-color: rgb(254, 179, 3);
-	text-align: center;
-	margin: 15px 0px 20px 50px;
-	padding: 15px 0 10px 0;
-	
-}
-.mahogany-box {
-	max-width: 150px; 
-	max-height: 150px;
-	background-color: rgb(57, 17, 7);
-	text-align: center;
-	margin: 15px 0px 20px 50px;
-	padding: 15px 0 10px 0;
-	
-}
-.hide {
-  display: none;
-}
+	.coffee-specs{
+		margin-top: 100px;
+		background-color: rgba(230,230,230,.8);
+		padding: 30px;
+
+	}
+	.indepth-regional-info {
+		margin-top: 100px;
+	}
+
+	.coffee-specs .readmore{
+		text-decoration: none;
+		font-size: 24px;
+	}
+
+	#show-this-on-click{
+		display:none;
+	}
+
+	.coffee-descriptor-tags {
+		font-size: 22px;
+		text-decoration: none;
+
+	}
+	.champagne-box {
+		max-width: 150px; 
+		max-height: 150px;
+		background-color: rgb(252, 248, 200); 
+		text-align: center;
+		margin: 10px 0px 20px 50px;
+		padding: 15px 0 10px 0;
+		
+	} 
+	.caramel-box {
+		max-width: 150px; 
+		max-height: 150px;
+		background-color: rgb(222, 120, 9);
+		text-align: center;
+		margin: 15px 0px 20px 50px;
+		padding: 15px 0 10px 0;
+		
+	}
+	.violet-box {
+		max-width: 150px; 
+		max-height: 150px;
+		background-color: rgb(146, 67, 227);
+		text-align: center;
+		margin: 15px 0px 20px 50px;
+		padding: 35px 0 20px 0;
+		
+	}
+	.persimmon-box {
+		max-width: 150px; 
+		max-height: 150px;
+		background-color: rgb(254, 179, 3);
+		text-align: center;
+		margin: 15px 0px 20px 50px;
+		padding: 15px 0 10px 0;
+		
+	}
+	.mahogany-box {
+		max-width: 150px; 
+		max-height: 150px;
+		background-color: rgb(57, 17, 7);
+		text-align: center;
+		margin: 15px 0px 20px 50px;
+		padding: 15px 0 10px 0;
+		
+	}
+	.hide {
+	  display: none;
+	}
 
 /* About Page CSS */
 
-.about-row-space{
-margin-bottom: 50px;
+	.about-row-space{
+	margin-bottom: 50px;
 
-}
+	}
 
-.about-text-block {
-text-align: center;
-max-width: 500px;
-padding: 50px;
-margin-top: 30px;
+	.about-text-block {
+	text-align: center;
+	padding: 50px;
+	margin-top: 30px;
 
-} 
+	} 
 
-.mission-head, .bio-head {
-margin-top: 50px;
-padding-top: 50px;
+	.mission-head, .bio-head {
+	margin-top: 50px;
+	padding-top: 50px;
 
-}
+	}
+	.big-screen-hide{
+	display:none;
+	}
 
+/*Basics Page CSS*/
+	.history-bckgrd{
+		background: url("../images/globes.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+
+	}
+	.nav-tabs{
+		font-family:'Crimson Text', 'Times New Roman', serif;
+		font-size: 17px;
+	}
+	.nav-tabs a{
+		color: rgb(83, 83, 83);
+	}
+	.basics-head{
+		font-family:'Crimson Text', 'Times New Roman', serif;
+		text-align: center;
+		padding: 20px 0;
+
+	}
+
+	.history-head{
+		padding: 10px;
+	}
 
 /* Media Queries*/
 
@@ -312,40 +344,52 @@ padding-top: 50px;
    	.logo {
 	font-size: 31px;
    }
-    .mobileHidden{
+
+    .mobile-hidden{
         display:none;
     }
-      .hamburger {
+    
+    .hamburger {
      	font-size: 20px;
         max-width: 60px;
         padding-top: 9px;
         display: block;
-        text-align: center;
         float: right;
         overflow: hidden;
         background-color:rgb(70,102,117); 
         color: white;
         border:2px;
+        margin-right: 20px;
+
 	} 
- }
- .big-screen-hide{
- 	display:none;
- }
+
+	.horizontal-nav{
+		width: 98%;
+	}
+	.horizontal-nav a {
+		font-size: 26px;  
+	}
+
+ 
+}
 
 @media only screen and (max-width: 936px){
+
   
     .horizontal-nav li{
         display: block;
         text-align: right;
         border-right:none;
         padding-right: 5px;
-        margin-right: 15px;
-        
+        margin-right: 5px; 
+
     }
+
     .horizontal-nav a {
 	 margin-left: 0;
 	 margin-right: 0;
-	 padding-right: 0;   
+	 padding-right: 0; 
+	
 	}
 
 	.horizontal-nav li:last-child {
@@ -354,30 +398,31 @@ padding-top: 50px;
 	}
 }
 
-@media only screen and (max-width: 992px){
-.about-hide {
-	display: none;
+@media only screen and (max-width: 992px) {
+	.about-hide {
+		display: none;
+	}
+
+	.big-screen-hide {
+		display: block;
+		max-height: 200px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.about-text-block {
+		margin-top: 20px;
+		padding: 0 30px;
+
+	}
+
+	.mission-head, .bio-head {
+		margin-top: 20px;
+		padding-top: 0;
+
+	}
 }
-.big-screen-hide{
- 	display: inline-block;
- 	max-height: 200px;
- 	margin: 0 auto;
- 	padding-left: 125px;
- 	margin-bottom: 20px;
- }
-.about-text-block {
-max-width: 500px;
-margin-top: 20px;
-padding:0 30px;
 
-}
-
-
-.mission-head, .bio-head {
-margin-top: 20px;
-padding-top: 0;
-
-}
 @media only screen and (min-width: 1092px){
 	.navigation {
     padding: 25px 0 10px;
@@ -391,7 +436,5 @@ padding-top: 0;
 	.logo {
 	font-size: 28px;
    }
-	.big-screen-hide{
-	 	padding-left: 75px;
-	 }
+
 } 
