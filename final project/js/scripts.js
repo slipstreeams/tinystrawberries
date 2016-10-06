@@ -2,11 +2,11 @@ jQuery(document).ready(function(){
 	/*When .readmore is clicked, show hidden list */
 	jQuery(".readmore").on("click",function() {
 		event.preventDefault();
-		jQuery("#show-this-on-click").slideDown();
+		jQuery(this).parent(".coffee-specs").children(".coffee-deets").slideDown();
 		/*Hide 'more' anchor element;*/
-		jQuery(".readmore").addClass("hide");
+		jQuery(this).addClass("hide");
 		/*Show 'less' anchor element*/
-		jQuery(".readless").removeClass("hide");
+		jQuery(this).parent(".coffee-specs").children(".readless").removeClass("hide");
 
 	});
 
@@ -33,7 +33,7 @@ jQuery(document).ready(function(){
 	/* Activate farming tab*/
 	$('#myTabs a[href="#farming"]').tab('show') 
 	/* Activate varietal dictionary tab*/
-	$('#myTabs a[href="#varietal-dictionary"]').tab('show') 
+	$('#myTabs a[href="#varietals"]').tab('show') 
 
 	jQuery('.hamburger').on('click', function( event ){
  		event.preventDefault();

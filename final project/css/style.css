@@ -45,9 +45,7 @@ body{
 }
 
 .top-nav{
-	font-size: 20px;
-	overflow:hidden;
-
+	font-size: 20px;	
 
 }
 .horizontal-nav{
@@ -64,7 +62,7 @@ body{
 
 .horizontal-nav a{
 	color: black;
-	 margin-left: 15px;
+	margin-left: 15px;
     margin-right: 15px;
 }
 
@@ -74,7 +72,8 @@ body{
 }
 
 .dropdown-menu-regions li{
-	display: block
+	display: block;
+	
 }
 
 .hamburger{
@@ -316,8 +315,24 @@ body{
 	 	-moz-background-size: cover;
 	 	-o-background-size: cover;
 	 	background-size: cover;
-
 	}
+
+	.farming-bckgrd{
+	background: url("../images/red-yellow-green-coffee-cherries.jpg") no-repeat center center fixed;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+	}
+
+	.varietal-bckgrd{
+	background: url("../images/picking-coffee.jpg") no-repeat center center fixed;
+ 	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-size: cover;
+	}
+
 	.nav-tabs{
 		font-family:'Crimson Text', 'Times New Roman', serif;
 		font-size: 17px;
@@ -325,15 +340,40 @@ body{
 	.nav-tabs a{
 		color: rgb(83, 83, 83);
 	}
+	.text-centered{
+		text-align: center;
+
+	}
 	.basics-head{
 		font-family:'Crimson Text', 'Times New Roman', serif;
 		text-align: center;
 		padding: 20px 0;
 
 	}
+	.basics-sub-head{
+		padding: 10px 0
+	}
 
-	.history-head{
-		padding: 10px;
+	.breathing-space{
+		padding: 5px 30px;
+	}
+
+	.basics-growing{
+		line-height: 30px;
+	}
+	.process-detail{
+		padding: 10px 0 5px 0;
+		font-size: 16px;
+	}
+
+	.varietal-dictionary{
+		font-size: 20px;
+		padding: 20px;
+		columns: 2;
+	}
+	.varietal-dictionary dd{
+		padding:15px 0;
+		
 	}
 
 /* Media Queries*/
@@ -388,13 +428,20 @@ body{
     .horizontal-nav a {
 	 margin-left: 0;
 	 margin-right: 0;
-	 padding-right: 0; 
+	 padding-right: 0;
+	 display: block; 
+	 clear:both;
 	
 	}
 
 	.horizontal-nav li:last-child {
     margin-right: 0px;
     border-right: 0;
+	}
+
+.dropdown-menu-regions {
+	position: relative;
+	float: right;
 	}
 }
 
