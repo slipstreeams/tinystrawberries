@@ -14,6 +14,9 @@ body{
 	font-family: 'Helvetica', Arial, sans-serif;
 }
 
+.jumbotron{
+	margin-bottom: 0;
+}
 /* Core CSS */
 .tyroHeader{ 
 	font-family:'Cinzel', serif;
@@ -153,6 +156,7 @@ body{
 	 	-moz-background-size: cover;
 	 	-o-background-size: cover;
 	 	background-size: cover;
+	 	margin-bottom:0;
 	}
 	.brazil-bckgrd{
 		background: url("../images/brazil-landscape.jpg") no-repeat center center fixed;
@@ -231,6 +235,10 @@ body{
 		display:none;
 	}
 
+	.readmore span, .readless span{
+		font-size: 16px;
+	}
+
 	.coffee-descriptor-tags {
 		font-size: 22px;
 		text-decoration: none;
@@ -276,9 +284,10 @@ body{
 		max-width: 150px; 
 		max-height: 150px;
 		background-color: rgb(57, 17, 7);
+		color: rgb(221, 223, 218);
 		text-align: center;
 		margin: 15px 0px 20px 50px;
-		padding: 15px 0 10px 0;
+		padding: 35px 0 20px 0;
 		
 	}
 	.hide {
@@ -288,24 +297,34 @@ body{
 /* About Page CSS */
 
 	.about-row-space{
-	margin-bottom: 50px;
+		margin-bottom: 50px;
 
 	}
 
 	.about-text-block {
-	text-align: center;
-	padding: 50px;
-	margin-top: 30px;
+	
+		padding: 50px;
+		margin-top: 30px;
 
 	} 
 
 	.mission-head, .bio-head {
-	margin-top: 50px;
-	padding-top: 50px;
+		margin-top: 50px;
+		padding-top: 50px;
 
 	}
+	.mission-head, .bio-head, .featured-question-head {
+		text-align: center;
+
+	}
+
+	.mission-text, .bio-text, .featured-question-text{
+		text-align: left;
+
+	}
+
 	.big-screen-hide{
-	display:none;
+		display:none;
 	}
 
 /*Basics Page CSS*/
@@ -315,22 +334,28 @@ body{
 	 	-moz-background-size: cover;
 	 	-o-background-size: cover;
 	 	background-size: cover;
+	 	
+	}
+
+	.basics-tabs-content-container .jumbotron {
+		border-radius: 0;
 	}
 
 	.farming-bckgrd{
-	background: url("../images/red-yellow-green-coffee-cherries.jpg") no-repeat center center fixed;
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
-	}
+		background: url("../images/red-yellow-green-coffee-cherries.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+	 	}
 
 	.varietal-bckgrd{
-	background: url("../images/picking-coffee.jpg") no-repeat center center fixed;
- 	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
+		background: url("../images/picking-coffee.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+	 	
 	}
 
 	.nav-tabs{
@@ -356,6 +381,9 @@ body{
 
 	.breathing-space{
 		padding: 5px 30px;
+	}
+	.breathing-space-vertical{
+		padding: 20px 0;
 	}
 
 	.basics-growing{
@@ -426,23 +454,23 @@ body{
     }
 
     .horizontal-nav a {
-	 margin-left: 0;
-	 margin-right: 0;
-	 padding-right: 0;
-	 display: block; 
-	 clear:both;
+		 margin-left: 0;
+		 margin-right: 0;
+		 padding-right: 0;
+		 display: block; 
+		 clear:both;
 	
 	}
 
 	.horizontal-nav li:last-child {
-    margin-right: 0px;
-    border-right: 0;
+	    margin-right: 0px;
+	    border-right: 0;
 	}
 
-.dropdown-menu-regions {
-	position: relative;
-	float: right;
-	}
+	.dropdown-menu-regions {
+		position: relative;
+		float: right;
+		}
 }
 
 @media only screen and (max-width: 992px) {

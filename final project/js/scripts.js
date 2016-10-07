@@ -1,7 +1,11 @@
 jQuery(document).ready(function(){
 	/*When .readmore is clicked, show hidden list */
 	jQuery(".readmore").on("click",function() {
-		event.preventDefault();
+		if (event.preventDefault) {
+			event.preventDefault();
+		} else {
+			event.returnValue = false;
+		}
 		jQuery(this).parent(".coffee-specs").children(".coffee-deets").slideDown();
 		/*Hide 'more' anchor element;*/
 		jQuery(this).addClass("hide");
@@ -12,7 +16,11 @@ jQuery(document).ready(function(){
 
 	/*When .readless is clicked, hide list */
 	jQuery(".readless").on("click",function(){
-		event.preventDefault();
+		if (event.preventDefault) {
+			event.preventDefault();
+		} else {
+			event.returnValue = false;
+		}
 		jQuery("#show-this-on-click").slideUp(400, function(){
 			/*Show'more' anchor element;*/
 			jQuery(".readmore").removeClass("hide");
