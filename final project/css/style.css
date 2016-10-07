@@ -379,12 +379,7 @@ body{
 		padding: 10px 0
 	}
 
-	.breathing-space{
-		padding: 5px 30px;
-	}
-	.breathing-space-vertical{
-		padding: 20px 0;
-	}
+
 
 	.basics-growing{
 		line-height: 30px;
@@ -403,6 +398,46 @@ body{
 		padding:15px 0;
 		
 	}
+
+/* Community Page*/
+	.community-bckgrd{
+		background: url("../images/steaming-coffee.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+ 	}
+
+ 	.community-head{
+		font-family:'Crimson Text', 'Times New Roman', serif;
+		text-align: center;
+		padding: 20px 0;
+
+	}
+
+	.community-sub-head{
+		padding: 10px 0
+	}
+	.community-list{
+		font-size: 20px;
+		padding: 20px;
+		
+	}
+
+	.community-list dd, .community-list li{
+		padding:15px 0;	
+	}
+
+/* Final fine-tuning styles that I want lower in cascade*/
+
+	.breathing-space{
+		padding: 5px 30px;
+	}
+	.breathing-space-vertical{
+		padding: 20px 0;
+	}
+
+
 
 /* Media Queries*/
 
