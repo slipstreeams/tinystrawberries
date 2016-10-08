@@ -1,0 +1,555 @@
+/* Box Model Hack */
+
+/* Clear fix hack */
+.clearfix:after{
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+body{
+	font-family: 'Helvetica', Arial, sans-serif;
+}
+
+.jumbotron{
+	margin-bottom: 0;
+}
+/* Core CSS */
+.tyroHeader{ 
+	font-family:'Cinzel', serif;
+	text-decoration:none;
+	padding: 20px;
+	background-color: white;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+}
+
+.logo{
+	
+	font-size: 41px;
+	float:left;
+	margin-left: 20px;
+}
+
+.logo span{
+	font-weight: 700;
+
+}
+.logo a{
+	color: black;
+}
+.navigation{
+    padding: 30px 0 10px;
+    
+}
+
+.top-nav{
+	font-size: 20px;	
+
+}
+.horizontal-nav{
+    list-style: none;
+    text-align: right;
+}
+
+
+.horizontal-nav li{
+    display: inline-block;
+    border-right: solid 1px black;
+ 
+}
+
+.horizontal-nav a{
+	color: black;
+	margin-left: 15px;
+    margin-right: 15px;
+}
+
+.horizontal-nav li:last-child{
+    margin-right: 10px;
+    border-right: none;
+}
+
+.dropdown-menu-regions li{
+	display: block;
+	
+}
+
+.hamburger{
+    max-width: 36px;
+    display: none;
+    overflow: hidden;
+}
+
+
+.region-home{
+	margin: 50px 0;
+	background: white;
+}
+
+.region-home h2, .region-home h3{
+	font-family:'Crimson Text', 'Times New Roman', serif;
+	text-align: center;
+
+}
+.region-home h2{
+	font-size: 40px;
+}
+
+.region-home h3{
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+.region-home p{
+	max-width: 750px;
+	margin: 0 auto;
+	padding: 30px 20px;
+	font-size: 16px;
+}
+
+/* landing regional thumbnail styling*/
+.img{
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 100px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.thumbnail{
+	background-color: rgb(237, 237, 234);
+	padding: 10px;
+}
+.button-region{
+	text-align: center;
+	font-family:'Crimson Text', 'Times New Roman', serif;
+	font-weight: 400;
+	font-size: 28px;
+	margin:10px;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+
+}
+
+.tyro-footer{
+	background: black;
+	color: white;
+	padding: 20px;
+
+}
+.tyro-footer .logo{
+	font-family:'Cinzel', serif;
+	font-size: 35px;
+}
+
+/* Regional Pages CSS */
+	.guatemala-bckgrd{
+		background: url("../images/guatemala-mtn.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+	 	margin-bottom:0;
+	}
+	.brazil-bckgrd{
+		background: url("../images/brazil-landscape.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+	}
+	.tanzania-bckgrd{
+		background: url("../images/tanzania-altitude.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+	}
+	.indonesia-bckgrd{
+		background: url("../images/indonesia-mtns.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+	}
+	.region-ca{
+		font-family:'Crimson Text', 'Times New Roman', serif;
+		text-align: center;
+		color: rgb(239, 131, 78);	
+	}
+	.regional-coffee-overview{
+		font-size: 16px;
+		padding:10px;
+		
+	}
+
+	.dark-contrast{
+		background-color: rgba(5,4,2,.8);
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 20px;
+		color: rgb(227, 217, 204);
+
+	}
+	.light-contrast{
+		background-color: rgba(230,230,230,.8);
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 20px;
+	}
+	.light-trnsprt-contrast{
+		background-color: rgba(230,230,230,.6);
+		color: black;
+		padding: 20px;
+	}
+
+	.col-centered {
+		float: none;
+		margin: 0 auto;
+	}
+
+
+	.coffee-specs{
+		margin-top: 100px;
+		background-color: rgba(230,230,230,.8);
+		padding: 30px;
+
+	}
+	.indepth-regional-info {
+		margin-top: 100px;
+	}
+
+	.coffee-specs .readmore{
+		text-decoration: none;
+		font-size: 24px;
+	}
+
+	#show-this-on-click{
+		display:none;
+	}
+
+	.readmore span, .readless span{
+		font-size: 16px;
+	}
+
+	.coffee-descriptor-tags {
+		font-size: 22px;
+		text-decoration: none;
+
+	}
+	.champagne-box {
+		max-width: 150px; 
+		max-height: 150px;
+		background-color: rgb(252, 248, 200); 
+		text-align: center;
+		margin: 10px 0px 20px 50px;
+		padding: 15px 0 10px 0;
+		
+	} 
+	.caramel-box {
+		max-width: 150px; 
+		max-height: 150px;
+		background-color: rgb(222, 120, 9);
+		text-align: center;
+		margin: 15px 0px 20px 50px;
+		padding: 15px 0 10px 0;
+		
+	}
+	.violet-box {
+		max-width: 150px; 
+		max-height: 150px;
+		background-color: rgb(146, 67, 227);
+		text-align: center;
+		margin: 15px 0px 20px 50px;
+		padding: 35px 0 20px 0;
+		
+	}
+	.persimmon-box {
+		max-width: 150px; 
+		max-height: 150px;
+		background-color: rgb(254, 179, 3);
+		text-align: center;
+		margin: 15px 0px 20px 50px;
+		padding: 15px 0 10px 0;
+		
+	}
+	.mahogany-box {
+		max-width: 150px; 
+		max-height: 150px;
+		background-color: rgb(57, 17, 7);
+		color: rgb(221, 223, 218);
+		text-align: center;
+		margin: 15px 0px 20px 50px;
+		padding: 35px 0 20px 0;
+		
+	}
+
+	.coffee-bean-link-af a{
+		font-weight: bold;
+		color: rgb(5, 51, 72);
+	}
+	.hide {
+	  display: none;
+	}
+
+/* About Page CSS */
+
+	.about-row-space{
+		margin-bottom: 50px;
+
+	}
+
+	.about-text-block {
+	
+		padding: 50px;
+		margin-top: 30px;
+
+	} 
+
+	.mission-head, .bio-head {
+		margin-top: 50px;
+		padding-top: 50px;
+
+	}
+	.mission-head, .bio-head, .featured-question-head {
+		text-align: center;
+
+	}
+
+	.mission-text, .bio-text, .featured-question-text{
+		text-align: left;
+
+	}
+
+	.big-screen-hide{
+		display:none;
+	}
+
+/*Basics Page CSS*/
+	.history-bckgrd{
+		background: url("../images/globes.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+	 	
+	}
+
+	.basics-tabs-content-container .jumbotron {
+		border-radius: 0;
+	}
+
+	.farming-bckgrd{
+		background: url("../images/red-yellow-green-coffee-cherries.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+	 	}
+
+	.varietal-bckgrd{
+		background: url("../images/picking-coffee.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+	 	
+	}
+
+	.nav-tabs{
+		font-family:'Crimson Text', 'Times New Roman', serif;
+		font-size: 17px;
+	}
+	.nav-tabs a{
+		color: rgb(83, 83, 83);
+	}
+	.text-centered{
+		text-align: center;
+
+	}
+	.basics-head{
+		font-family:'Crimson Text', 'Times New Roman', serif;
+		text-align: center;
+		padding: 20px 0;
+
+	}
+	.basics-sub-head{
+		padding: 10px 0
+	}
+
+
+
+	.basics-growing{
+		line-height: 30px;
+	}
+	.process-detail{
+		padding: 10px 0 5px 0;
+		font-size: 16px;
+	}
+
+	.varietal-dictionary{
+		font-size: 20px;
+		padding: 20px;
+		columns: 2;
+	}
+	.varietal-dictionary dd{
+		padding:15px 0;
+		
+	}
+
+/* Community Page*/
+	.community-bckgrd{
+		background: url("../images/steaming-coffee.jpg") no-repeat center center fixed;
+	 	-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+	 	-o-background-size: cover;
+	 	background-size: cover;
+ 	}
+
+ 	.community-head{
+		font-family:'Crimson Text', 'Times New Roman', serif;
+		text-align: center;
+		padding: 20px 0;
+
+	}
+
+	.community-sub-head{
+		padding: 10px 0
+	}
+	.community-list{
+		font-size: 20px;
+		padding: 20px;
+		
+	}
+
+	.community-list dd, .community-list li{
+		padding:15px 0;	
+	}
+
+/* Final fine-tuning styles that I want lower in cascade*/
+
+	.breathing-space{
+		padding: 5px 30px;
+	}
+	.breathing-space-vertical{
+		padding: 20px 0;
+	}
+
+
+
+/* Media Queries*/
+
+
+
+@media only screen and (max-width: 600px){
+   	.logo {
+	font-size: 31px;
+   }
+
+    .mobile-hidden{
+        display:none;
+    }
+    
+    .hamburger {
+     	font-size: 20px;
+        max-width: 60px;
+        padding-top: 9px;
+        display: block;
+        float: right;
+        overflow: hidden;
+        background-color:rgb(70,102,117); 
+        color: white;
+        border:2px;
+        margin-right: 20px;
+
+	} 
+
+	.horizontal-nav{
+		width: 98%;
+	}
+	.horizontal-nav a {
+		font-size: 26px;  
+	}
+
+ 
+}
+
+@media only screen and (max-width: 936px){
+
+  
+    .horizontal-nav li{
+        display: block;
+        text-align: right;
+        border-right:none;
+        padding-right: 5px;
+        margin-right: 5px; 
+
+    }
+
+    .horizontal-nav a {
+		 margin-left: 0;
+		 margin-right: 0;
+		 padding-right: 0;
+		 display: block; 
+		 clear:both;
+	
+	}
+
+	.horizontal-nav li:last-child {
+	    margin-right: 0px;
+	    border-right: 0;
+	}
+
+	.dropdown-menu-regions {
+		position: relative;
+		float: right;
+		}
+}
+
+@media only screen and (max-width: 992px) {
+	.about-hide {
+		display: none;
+	}
+
+	.big-screen-hide {
+		display: block;
+		max-height: 200px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.about-text-block {
+		margin-top: 20px;
+		padding: 0 30px;
+
+	}
+
+	.mission-head, .bio-head {
+		margin-top: 20px;
+		padding-top: 0;
+
+	}
+}
+
+@media only screen and (min-width: 1092px){
+	.navigation {
+    padding: 25px 0 10px;
+	}
+
+   .top-nav {
+	font-size: 25px;
+	}
+} 
+@media only screen and (max-width: 480px){
+	.logo {
+	font-size: 28px;
+   }
+
+} 
